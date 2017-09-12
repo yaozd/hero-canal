@@ -1,4 +1,9 @@
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star&style=flat-square)](https://github.com/Ac-heron/hexo-canal)
+[![star this repo](http://githubbadges.com/star.svg?user=Ac-heron&repo=hexo-canal&style=default)](https://github.com/Ac-heron/hexo-canal)
+[![fork this repo](http://githubbadges.com/fork.svg?user=Ac-heron&repo=hexo-canal&style=default)](https://github.com/Ac-heron/hexo-canal/fork)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 # 使用canal实现redis缓存刷新,提供web配置
+
 ![canal1](img/canal-list.png)
 ![canal2](img/canal-update.png)
 
