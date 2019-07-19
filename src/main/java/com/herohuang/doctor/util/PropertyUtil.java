@@ -35,7 +35,8 @@ public class PropertyUtil {
         Properties pps = new Properties();
         InputStream is = null;
         try {
-            is = new FileInputStream(getFilePath());
+            is = PropertyUtil.class.getClassLoader().getResourceAsStream(getFilePath());
+            //is = new FileInputStream(getFilePath());
             pps.load(is);
         } catch (IOException e) {
             logger.error("Could not find resource "+getFilePath());

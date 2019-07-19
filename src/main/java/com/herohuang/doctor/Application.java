@@ -9,6 +9,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
     private static Logger logger = LoggerFactory.getLogger(Application.class);
 
+    /**
+     * http://localhost:8087/
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);
         logger.info("Application start success...");

@@ -63,7 +63,7 @@ public class HttpHelper {
                 requestBuilder.addHeader(key, headers.get(key));
             }
         }
-        return parseRequest(HttpPool.getClient(), requestBuilder.build());
+        return parseRequest(com.myweimai.doctor.common.util.http.HttpPool.getClient(), requestBuilder.build());
     }
 
     public HttpResult post(String uri) {
@@ -115,7 +115,7 @@ public class HttpHelper {
             }
         }
 
-        return parseRequest(HttpPool.getClient(), requestBuilder.build());
+        return parseRequest(com.myweimai.doctor.common.util.http.HttpPool.getClient(), requestBuilder.build());
     }
 
     // --------------------------- Start: PUT Manual---------------------------
@@ -162,7 +162,7 @@ public class HttpHelper {
                 requestBuilder.addHeader(key, headers.get(key));
             }
         }
-        return parseRequest(HttpPool.getClient(), requestBuilder.build());
+        return parseRequest(com.myweimai.doctor.common.util.http.HttpPool.getClient(), requestBuilder.build());
     }
     // --------------------------- End: PUT Manual ---------------------------
 
@@ -194,7 +194,7 @@ public class HttpHelper {
                 requestBuilder.addHeader(key, headers.get(key));
             }
         }
-        return parseRequest(HttpPool.getClient(), requestBuilder.build());
+        return parseRequest(com.myweimai.doctor.common.util.http.HttpPool.getClient(), requestBuilder.build());
     }
 
     // --------------------------- Start: DELETE Manual ---------------------------
@@ -210,7 +210,7 @@ public class HttpHelper {
         }
         final RequestBuilder requestBuilder = RequestBuilder.head();
         requestBuilder.setUri(uri);
-        return parseRequest(HttpPool.getClient(), requestBuilder.build());
+        return parseRequest(com.myweimai.doctor.common.util.http.HttpPool.getClient(), requestBuilder.build());
     }
 
     private HttpResult parseRequest(CloseableHttpClient httpClient, HttpUriRequest request) {
